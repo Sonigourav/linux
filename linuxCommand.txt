@@ -1,0 +1,201 @@
+    1  sudo apt update
+    2  sudo nano /etc/resolv.conf 
+    3  sudo apt update
+    4  sudo apt upgrade
+    5  sudo apt install gcc++
+    6  sudo apt install gcc
+    7  sudo apt install build-essentials
+    8  sudo apt install build-essential
+    9  sudo apt install gdb
+   10  init 0
+   11  gcc --version
+   12  cd "/home/rps/Desktop/C Demo/" && gcc first.c -o first && "/home/rps/Desktop/C Demo/"first
+   13  sudo su
+   14  tar xvfz node_exporter-1.7.0.linux-amd64.tar.gz 
+   15  cd node_exporter-1.7.0.linux-amd64/
+   16  sudo mv node_exporter /usr/local/bin/
+   17  sudo tee /etc/systemd/system/node_exporter.service<<EOF
+   18  [Unit]
+   19  Description=Node Exporter
+   20  After=network.target
+   21   
+   22  [Service]
+   23  User=rps
+   24  Group=rps
+   25  Type=simple
+   26  ExecStart=/usr/local/bin/node_exporter
+   27   
+   28  [Install]
+   29  WantedBy=multi-user.target
+   30  EOF
+   31  sudo systemctl daemon-reload
+   32  sudo systemctl start node_exporter
+   33  sudo systemctl enable node_exporter
+   34  sudo systemctl status node_exporter
+   35  sudo apt install gcc
+   36  sudo apt install git
+   37  sudo apt install make
+   38  sudo apt install vim
+   39  sudo apt install g++
+   40  sudo apt install gedit
+   41  sudo apt install cmake
+   42  sudo apt install g++
+   43  df -h
+   44  sudo apt update
+   45  sudo apt upgrade
+   46  sudo reboot
+   47  mkdir test
+   48  ls
+   49  cd test
+   50  pwd
+   51  mkdir test1
+   52  cd test1
+   53  cd.
+   54  cat file1.txt
+   55  cat > file1.txt
+   56  cat file1.txt
+   57  cd .
+   58  cd ..
+   59  vi file2.txt
+   60  cat file2.txt
+   61  touch file3.txt
+   62  touch file4.txt file5.txt file6.txt
+   63  history
+   64  clear
+   65  cd .
+   66  cd ..
+   67  clear
+   68  man ls
+   69  ls
+   70  ls /bin
+   71  ls -al/bin
+   72  ls -al /bin
+   73  mkdir tst1
+   74  cd tst1
+   75  cd .
+   76  cd ..
+   77  mkdir tst2
+   78  cd ../tst2
+   79  cd tst1
+   80  cd ../tst2
+   81  cd /etc
+   82  cd ..
+   83  pwd
+   84  cd tst1 
+   85  cd tst1
+   86  mkdir tst1
+   87  cd tst2
+   88  mkdir tst3
+   89  clear
+   90  mkdir tst1
+   91  clear
+   92  cd tst1
+   93  cd tst2
+   94  mkdir tst2
+   95  cd tst2
+   96  pwd
+   97  cd ..
+   98  mkdir -p tst3/tst4
+   99  cd tst4
+  100  man mkdir
+  101  cd tst3
+  102  cd tst4
+  103  cd ../tst1
+  104  cd ..
+  105  cd ../tst1
+  106  rmdir tst3
+  107  cd ..
+  108  rmdir tst3
+  109  pwd
+  110  rmdir tst3
+  111  rmdir tst2
+  112  rmdir tst3 tst4
+  113  cd tst3
+  114  rmdir tst4
+  115  cd ..
+  116  rmdir tst3
+  117  cd tst1
+  118  cat > file1.txt
+  119  rm -rf tst1 file.txt
+  120  open tst1
+  121  cd ..
+  122  open tst1
+  123  open .
+  124  open firefox web browser
+  125  open Thunderbird Mail
+  126  man find 
+  127  find -name 'file1.txt'
+  128  find. -type .txt -name file1
+  129  alias ll = 'ls -al'
+  130  alias ll='ls -al'
+  131  ll
+  132  mkdir test1
+  133  cd test1
+  134  cat > file2.txt
+  135  cd ..
+  136  less file2.txt
+  137  cd test1
+  138  less file2.txt
+  139  cd ..
+  140  mkdir test2
+  141  cd test2
+  142  cat > file4.txt
+  143  open file4.txt
+  144  sort file4.txt
+  145  less file4.txt
+  146  open fil.txt
+  147  open file4.txt
+  148  sort file4.txt | uniq
+  149  open file4.txt
+  150  cd..
+  151  cd ..
+  152  echo 'hello'
+  153  echo "hello" >> test2
+  154  echo "hello" >> file4.txt
+  155  umask
+  156  du
+  157  du *
+  158  cd test
+  159  cd test4
+  160  mkdir tt1
+  161  cd tt1
+  162  du
+  163  du -m
+  164  cd ..
+  165  df
+  166  df -h
+  167  sudo apt update
+  168  baseman 
+  169  cd tt1
+  170  baseman 
+  171  cd ..
+  172  ps
+  173  ps ax
+  174  top
+  175  kill
+  176  killall
+  177  jobs
+  178  type cd
+  179  type ll
+  180  type pwd
+  181  which ls
+  182  vi
+  183  vi tst.txt
+  184  emcas 
+  185  nano
+  186  whoami
+  187  who
+  188  who -aH
+  189  who am i 
+  190  who am i
+  191  sudo i
+  192  ping google.com
+  193  uname
+  194  unmae -mp
+  195  history
+  196  touch linuxComm.txt
+  197  mkdir linux
+  198  cd linux
+  199  touch linux
+  200  touch linuxCommand.txt
+  201  history >> linuxCommand.txt
